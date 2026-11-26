@@ -1,0 +1,85 @@
+/* Screenshot-inspired banking dashboard preview for the featured project card. */
+.banking-visual {
+  display: block;
+  padding: 0 !important;
+  overflow: hidden;
+  background: #f3f5fa !important;
+  color: #101114;
+}
+.banking-preview {
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  background: #f3f5fa;
+  color: #111318;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(7px, 1vw, 12px);
+  text-align: left;
+  overflow: hidden;
+}
+.bank-topbar {
+  height: 11%;
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5%;
+  border-bottom: 1px solid #252525;
+  background: #f8f9fc;
+}
+.bank-brand { display: flex; align-items: center; gap: 9px; }
+.bank-brand b {
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: white;
+  background: #050505;
+  font-size: 13px;
+}
+.bank-brand strong { font-size: 1.15em; }
+.bank-icons { display: flex; gap: 13px; font-size: 1.1em; }
+.bank-content { padding: 2.5% 4.2%; }
+.bank-content h4 { margin: 0 0 3px; font-size: clamp(13px, 2.1vw, 20px); }
+.bank-subtitle { margin: 0 0 2.5%; color: #687080; }
+.balance-card {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-height: 92px;
+  padding: 15px 3%;
+  border-radius: 14px;
+  color: white;
+  background: #030303;
+  box-shadow: 5px 6px 0 #d3d4d8;
+}
+.balance-card small { color: #d7d7d7; }
+.balance-card strong { font-size: clamp(23px, 4vw, 34px); line-height: 1; }
+.balance-card b { margin-top: 3px; color: #00e9a1; }
+.bank-content h5 { margin: 16px 0 9px; font-size: 1em; }
+.quick-actions { display: grid; grid-template-columns: repeat(4, 1fr); gap: 9px; }
+.quick-actions > div, .account-card, .transactions {
+  border: 1px solid #252525;
+  border-radius: 11px;
+  background: #fff;
+  box-shadow: 2px 3px 0 #d5d6da;
+}
+.quick-actions > div { min-height: 64px; padding: 9px; display: flex; flex-direction: column; justify-content: space-between; }
+.quick-actions i { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 8px; color: white; background: #050505; font-style: normal; }
+.bank-lower { display: grid; grid-template-columns: 0.9fr 1.8fr; gap: 12px; margin-top: 14px; }
+.account-card, .transactions { min-height: 106px; padding: 12px; display: flex; flex-direction: column; gap: 7px; }
+.account-card small { color: #737987; }
+.account-card strong { font-size: 1.1em; }
+.transaction-head { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 9px; padding: 8px 4px; border-bottom: 1px solid #e6e7ea; color: #535965; font-size: .85em; }
+.contact-details { display: flex; flex-direction: column; gap: 8px; }
+.contact-details a { width: fit-content; }
+@media (max-width: 600px) {
+  .banking-preview { min-height: 270px; }
+  .bank-content { padding: 3%; }
+  .balance-card { min-height: 75px; }
+  .quick-actions { gap: 5px; }
+  .quick-actions > div { min-height: 55px; padding: 6px; }
+  .bank-lower { gap: 6px; margin-top: 9px; }
+  .account-card, .transactions { min-height: 85px; padding: 8px; }
+}
