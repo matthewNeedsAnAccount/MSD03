@@ -1,0 +1,21 @@
+/* Contact details: more prominent and aligned with the portfolio's editorial palette. */
+.contact-details {
+  gap: 12px;
+}
+.contact-details a {
+  width: fit-content;
+  color: var(--paper);
+  font-family: 'DM Mono', monospace;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.5;
+  text-decoration: none;
+  text-decoration-color: var(--lime);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+  transition: color 180ms ease, text-decoration-color 180ms ease;
+}
+.contact-details a:hover,
+.contact-details a:focus-visible {
+  color: var(--lime);
+  text-decoration: underline;
+}
